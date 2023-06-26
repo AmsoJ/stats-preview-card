@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+@import './color';
+// font-family: 'Inter', sans-serif;
+// font-family: 'Lexend Deca', sans-serif;
+body {
+    min-height: 100vh;
+    // background-color: black;
+}
+.wrapper {
+    min-height: inherit;
+    background-color: $Very-dark-blue-bg-main;
+    .card-wrap {
+        background-color: $Dark-desaturated-blue-card-bg;
+        .card-item {
+            min-height: 300px;
+            .left {
+                .title{
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 700;
+                    .label {
+                        color: $Soft-violet-accent;
+                    }
+                }
+                .text {
+                    color: $Slightly-transparent-white;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                }
+                .rating {
+                    div {
+                        font-family: 'Lexend Deca', sans-serif;
+                        font-weight: 700;
+                        p {
+                            color: $Slightly-transparent-white;
+                        }
+                    }
+                }
+            }
+            .right {
+                background: linear-gradient($Soft-violet-accent-transparent, $Soft-violet-accent-transparent), url(./../../images/image-header-desktop.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                min-height: inherit;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        .card-wrap {
+            .card-item .right {
+                background: linear-gradient($Soft-violet-accent-transparent, $Soft-violet-accent-transparent), url(./../../images/image-header-mobile.jpg);
+                background-size: cover;
+            }
+        }
+    }
+}

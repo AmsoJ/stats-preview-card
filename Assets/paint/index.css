@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+body {
+  min-height: 100vh;
+}
+
+.wrapper {
+  min-height: inherit;
+  background-color: hsl(233, 47%, 7%);
+}
+.wrapper .card-wrap {
+  background-color: hsl(244, 38%, 16%);
+}
+.wrapper .card-wrap .card-item {
+  min-height: 300px;
+}
+.wrapper .card-wrap .card-item .left .title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+.wrapper .card-wrap .card-item .left .title .label {
+  color: hsl(277, 64%, 61%);
+}
+.wrapper .card-wrap .card-item .left .text {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.wrapper .card-wrap .card-item .left .rating div {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 700;
+}
+.wrapper .card-wrap .card-item .left .rating div p {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+.wrapper .card-wrap .card-item .right {
+  background: linear-gradient(hsla(277, 90%, 19%, 0.616), hsla(277, 90%, 19%, 0.616)), url(./../../images/image-header-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: inherit;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .card-wrap .card-item .right {
+    background: linear-gradient(hsla(277, 90%, 19%, 0.616), hsla(277, 90%, 19%, 0.616)), url(./../../images/image-header-mobile.jpg);
+    background-size: cover;
+  }
+}
